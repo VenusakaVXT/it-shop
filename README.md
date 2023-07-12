@@ -51,9 +51,9 @@ Please uncomment the following elements in the DOM:
 </div>
 ```
 
-And then comment the elements with class .header__message-box--is-loggin, .header__navbar-user and .header__cart-list--has-product to work properly. If you want to use the logged in function, do the opposite of the above.
+And then comment the elements with class **.header__message-box--is-loggin**, **.header__navbar-user** and **.header__cart-list--has-product** to work properly. If you want to use the logged in function, do the opposite of the above.
 
-I have also fully noted in the file index.html.
+I have also fully noted in the file **index.html**.
 
 And also the CSS for each element to appear on logout or login.
 
