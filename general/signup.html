@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký ngay | IT Shop</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/font.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header class="header">
+            <div class="header__title">
+                <a href="../index.html" class="header__title-brand">
+                    <i class="fas fa-shop-lock"></i> IT Shop
+                </a>
+                <div class="header__title-name">Đăng ký</div>
+            </div>
+    
+            <div class="header__help">
+                <a href="https://support.google.com/">Bạn cần giúp đỡ?</a>
+            </div>
+        </header>
+    
+        <div class="container">
+            <div class="container__brand">
+                <div class="container__brand-logo">
+                    <i class="fas fa-shop-lock"></i> IT Shop
+                </div>
+                <div class="container__brand-description">
+                    Nền tảng thương mại điện tử đa dạng <br>sản phẩm công nghệ uy tín nhất Việt Nam
+                </div>
+            </div>
+    
+            <div class="container__form">
+                <div class="container__form-name">Đăng ký</div>
+    
+                <div class="container__form-input">
+                    <input id="js-input-phone" type="tel" pattern="(\+84|0)\d{9,10}" required placeholder="Nhập số điện thoại">
+                    <input id="js-input-password" type="password" required placeholder="Nhập mật khẩu">
+                    <input id="js-input-password-authentication" type="password" required placeholder="Xác thực mật khẩu">
+                </div>
+    
+                <button id="js-btn" type="submit" class="container__confirm-btn js-register-btn">TIẾP THEO</button>
+    
+                <div class="container__other">
+                    <div class="line"></div>
+                    <span>HOẶC</span>
+                    <div class="line"></div>
+                </div>
+    
+                <div class="container__switch-social">
+                    <button class="container__switch-social-btn">
+                        <img src="../assets/image/facebook-icon.jpg" alt=""><span>Facebook</span>
+                    </button>
+                    <button class="container__switch-social-btn">
+                        <img src="../assets/image/google-icon.png" alt=""><span>Google</span>
+                    </button>
+                </div>
+    
+                <div class="container__policy">
+                    Bằng việc đăng ký, bạn đã đồng ý với IT Shop về <br>
+                    <a href="" class="container__policy-link">Điều khoản dịch vụ</a> & 
+                    <a href="" class="container__policy-link">Chính sách bảo mật</a>
+                </div>
+    
+                <div class="container__user-question">
+                    Bạn đã có tài khoản? <a href="./login.html">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer></footer>
+
+    <div class="modal js-modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__container js-modal-container">
+            <p id="js-paragraph" class="modal__container-content"></p>
+
+            <div class="modal__container-btn">
+                <button class="js-cancel-btn">Trở lại</button>
+                <button>Phương thức khác</button>
+                <button>Gửi</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

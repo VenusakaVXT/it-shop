@@ -1,0 +1,248 @@
+/* Header */
+.header {
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    background: var(--white-color);
+    padding: 30px 110px;
+}
+
+.header__title {
+    display: flex;
+    font-size: 20px;
+}
+
+.header__title-brand {
+    text-decoration: none;
+    color: var(--value-background);
+}
+
+.header__title-name {
+    color: var(--text-color);
+    padding-left: 18px;
+    line-height: 21px;
+}
+
+.header__help a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--value-background);
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-around;
+    background: var(--value-background);
+    padding: 68px 0;
+    color: var(--white-color);
+}
+
+/* Container background */
+.container__brand {
+    font-size: 60px;
+    padding: 90px 0;
+}
+
+.container__brand-logo {
+    padding-bottom: 50px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.container__brand-description {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+/* Container form */
+.container__form {
+    width: 400px;
+    height: 500px;
+    background: var(--white-color);
+    border-radius: 10px;
+    padding: 30px;
+    line-height: 36px;
+}
+
+.container__form-login {
+    width: 400px;
+    height: 430px;
+}
+
+.container__form-name {
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.container__form-input input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    opacity: 1;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.container__confirm-btn {
+    text-decoration: none;
+    width: 100%;
+    background: var(--value-background);
+    font-size: 14px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.container__confirm-btn:hover {
+    opacity: 0.8;
+}
+
+.container__confirm-btn a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.container__other {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__other .line {
+    border: 1px solid #ccc;
+    width: 135px;
+}
+
+.container__other span {
+    color: #ccc;
+    font-size: 14px;
+    padding: 0 16px;
+}
+
+/* Form foooter */
+.container__switch-social {
+    display: flex;
+    padding: 8px 0;
+}
+
+.container__switch-social-btn {
+    display: flex;
+    width: 50%;
+    font-size: 16px;
+    color: var(--text-color);
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.container__switch-social-btn img {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    margin-right: 0;
+}
+
+.container__switch-social-btn span {
+    margin: auto 24px auto 0;
+}
+
+.container__switch-social-btn:last-child,
+.container__switch-social-btn img:first-child {
+    margin-left: 18px;
+}
+
+.container__policy, .container__user-question {
+    margin: 14px 0;
+    color: var(--text-color);
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.container__user-question {
+    font-size: 14px;
+}
+
+.container__policy-link, 
+.container__user-question a {
+    color: var(--value-background);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container__forgot-password {
+    text-decoration: none;
+    font-size: 12px;
+    color: blue;
+    position: relative;
+    top: 0;
+    right: -74.5%;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.modal__container {
+    margin: auto;
+    width: 440px;
+    height: 180px;
+    position: relative;
+    background: var(--white-color);
+    border-radius: 3px;
+    z-index: 1;
+    padding: 30px;
+}
+
+.modal__container-content {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 38px;
+}
+
+.modal__container-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal__container-btn button {
+    height: 42px;
+    padding: 14px;
+    font-size: 16px;
+    color: var(--text-color);
+    cursor: pointer;
+    margin-left: 12px;
+    background: var(--white-color);
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.modal__container-btn button:hover {
+    opacity: 0.8;
+}
+
+.modal__container-btn button:last-child {
+    background: var(--value-background);
+    color: var(--white-color);
+    border-color: var(--value-background);
+}
+
+#js-btn.disabled {
+    filter: brightness(80%);
+    cursor: no-drop;
+    opacity: 1;
+}

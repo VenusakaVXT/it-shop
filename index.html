@@ -1,0 +1,2306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Shop</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="grid grid-header">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--seperate">Tải ứng dụng IT Shop
+                            <div class="header__qr-code">
+                                <img src="./assets/image/it_store.png" alt="QR code" class="header__qr-img">
+                                <div class="header__download">
+                                    <a href="https://play.google.com/store/games?hl=vi&gl=US" target="_blank" class="header__qr-link">
+                                        <img src="./assets/image/ch_play.png" alt="CH Play" class="header__app-download">
+                                    </a>
+                                    <a href="https://www.apple.com/vn/app-store/" target="_blank" class="header__qr-link">
+                                        <img src="./assets/image/app_store.png" alt="App Store" class="header__app-download">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--seperate">Kênh Người Bán</li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item--no-pointer">Kết nối</span>
+                            <a href="https://www.facebook.com" class="header__navbar-contact-icon" target="_blank">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com" class="header__navbar-contact-icon" target="_blank">
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--show-message">
+                            <a class="header__navbar-link" href="#">
+                                <i class="header__navbar-icon raise-icon fas fa-bell"></i>Thông báo
+                                <span class="header__message-notification"></span>
+                            </a>
+
+                            <!-- Not logged in -->
+                            <!-- <div class="header__message-box header__message-box--no-loggin">
+                                <div class="header__message-box-wrap--no-login">
+                                    <img src="./assets/image/no_message.png" alt="">
+                                    <span><a href="./general/login.html">Đăng Nhập</a> để xem được Thông Báo</span>
+                                </div>
+                            </div> -->
+
+                            <!-- Logged -->
+                            <div class="header__message-box header__message-box--is-loggin">
+                                <header class="header__message-title">
+                                    <h3>Thông báo mới</h3>
+                                    <h4 class="js-checkbox-all-read">Đánh dấu tất cả đã đọc</h4>
+                                </header>
+                                <ul class="header__message-list js-message-list">
+                                    <li class="header__message-item header__message-item--unread js-message-item">
+                                        <a href="#" class="header__message-link">
+                                            <img src="./assets/image/iphone14256gb.jpg" alt="Nội dung thông báo" class="header__message-image">
+                                            <div class="header__message-body">
+                                                <span class="header__message-name">Iphone 14 Pro Max 256gb chính hãng GIẢM GIÁ 20%</span>
+                                                <span class="header__message-describe">Mô tả của Iphone 14 Pro Max 256gb chính hãng ...</span>
+                                            </div>
+                                            <span class="header_message-detail">...</span>
+                                        </a>
+                                    </li>
+                                    <li class="header__message-item header__message-item--unread js-message-item">
+                                        <a href="#" class="header__message-link">
+                                            <img src="./assets/image/tcl28inch.jpg" alt="Nội dung thông báo" class="header__message-image">
+                                            <div class="header__message-body">
+                                                <span class="header__message-name">Tivi LED TCL L28B2500 28 inch TRẢ GÓP 0%</span>
+                                                <span class="header__message-describe">Mô tả của Tivi LED TCL L28B2500 28 inch ...</span>
+                                            </div>
+                                            <span class="header_message-detail">...</span>
+                                        </a>
+                                    </li>
+                                    <li class="header__message-item header__message-item--unread js-message-item">
+                                        <a href="#" class="header__message-link">
+                                            <img src="./assets/image/ipad2air.png" alt="Nội dung thông báo" class="header__message-image">
+                                            <div class="header__message-body">
+                                                <span class="header__message-name">Ipad Air 2 16GB chính hãng giảm giá SỐC</span>
+                                                <span class="header__message-describe">Mô tả của Ipad Air 2 16GB chính hãng giảm giá ...</span>
+                                            </div>
+                                            <span class="header_message-detail">...</span>
+                                        </a>
+                                    </li>
+                                    <li class="header__message-item js-message-item">
+                                        <a href="#" class="header__message-link">
+                                            <img src="./assets/image/sonyplaystation5.jpg" alt="Nội dung thông báo" class="header__message-image">
+                                            <div class="header__message-body">
+                                                <span class="header__message-name">Sony Playstation 5 số lượng có hạn Chỉ còn 5 chiếc</span>
+                                                <span class="header__message-describe">Mô tả của Sony Playstation 5 số lượng có hạn ...</span>
+                                            </div>
+                                            <span class="header_message-detail">...</span>
+                                        </a>
+                                    </li>
+                                    <li class="header__message-item js-message-item">
+                                        <a href="#" class="header__message-link">
+                                            <img src="./assets/image/iphone13promax.jpg" alt="Nội dung thông báo" class="header__message-image">
+                                            <div class="header__message-body">
+                                                <span class="header__message-name">Iphone 13 Pro Max 128gb chính hãng, giảm giá 30%</span>
+                                                <span class="header__message-describe">Mô tả của Iphone 13 Pro Max 128gb chính hãng ...</span>
+                                            </div>
+                                            <span class="header_message-detail">...</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__message-see-all">
+                                    <a href="#">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-link" href="#">
+                                <i class="header__navbar-icon raise-icon far fa-question-circle"></i>Hỗ trợ
+                            </a>
+                        </li>
+                        
+                        <!-- When not logged in -->
+                        <!-- <li class="header__navbar-item header__navbar-item--seperate">
+                            <a href="./general/signup.html" class="resgis-and-login__link">Đăng ký</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./general/login.html" class="resgis-and-login__link">Đăng nhập</a>
+                        </li> -->
+
+                        <!-- Logged -->
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="./assets/image/avatar_user_clone.png" alt="" class="header__navbar-user-avt raise-icon">
+                            <span class="header__navbar-user-name">Võ Xuân Tuấn</span>
+
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-menu-item">
+                                    <a href="#">Xem tài khoản</a>
+                                </li>
+                                <li class="header__navbar-user-menu-item">
+                                    <a href="#">Quản lý tài khoản</a>
+                                </li>
+                                <li class="header__navbar-user-menu-item">
+                                    <a href="#">Quản lý đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-menu-item">
+                                    <a href="#">Quản lý thanh toán</a>
+                                </li>
+                                <li id="logout" class="header__navbar-user-menu-item header__navbar-user-menu-item--seperate">
+                                    <a href="./general/login.html">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-child">
+                    <a href="./index.html" class="header__logo">
+                        <i class="fas fa-shop-lock"></i> IT Shop
+                    </a>
+
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input js-search-input" placeholder="Tìm kiếm sản phẩm">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử Tìm kiếm</h3>
+                                <ul class="header__search-history-list js-ul-search">
+                                    <li class="header__search-history-item js-history-item">
+                                        <a class="js-style" href="#">Laptop giá rẻ</a>
+                                        <i class="js-style js-delete-history fas fa-close"></i>
+                                    </li>
+                                    <li class="header__search-history-item js-history-item">
+                                        <a class="js-style" href="#">Iphone XS Max trả góp</a>
+                                        <i class="js-style js-delete-history fas fa-close"></i>
+                                    </li>
+                                    <li class="header__search-history-item js-history-item">
+                                        <a class="js-style" href="#">Để tản nhiệt cho máy tính</a>
+                                        <i class="js-style js-delete-history fas fa-close"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label"></span>
+                            <i class="header__search-select-icon fas fa-angle-down"></i>
+
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item">
+                                    <span>Trong nước</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoài nước</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn js-search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-cart-shopping"></i>
+                            <span class="header__cart-notification"></span>
+
+                            <!-- No product then class name: header__cart-list--no-product -->
+                            <!-- <div class="header__cart-list header__cart-list--no-product">
+                                <img src="./assets/image/cart_no_product.png" alt="">
+                                <p class="header__cart-list--no-product-msg">Chưa có sản phẩm</p>
+                            </div> -->
+
+                            <!-- Have products then class name: header__cart-list--has-product-->
+                            <div class="header__cart-list header__cart-list--has-product">
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul id="js-cart" class="header__cart-list-product">
+                                    <li class="header__cart-product-item">
+                                        <input class="header__cart-product-item-tick" type="checkbox">
+                                        <img class="header__cart-product-item-img" src="./assets/image/laptop_dell_latitude_3520.jpg" alt="">
+                                        <div class="header__cart-product-item-info">
+                                            <div class="header__cart-product-item-head">
+                                                <h5 class="header__cart-product-item-name">Laptop Dell Latitude 3520 15.6''</h5>
+                                                <div class="header__cart-product-price-wrap">
+                                                    <span class="header__cart-product-item-price">10.500.000đ</span>
+                                                    <span class="header__cart-product-multiply">x</span>
+                                                    <span class="header__cart-product-item-quantity js-display-quantity" data-default-value="1">1</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="header__cart-product-body">
+                                                <span class="header__cart-product-classification">Phân loại: Máy tính</span>
+                                                <div class="header__cart-product-body-choose-quantity">
+                                                    <button class="js-increase-btn">+</button>
+                                                    <input type="number" min="1" max="10" step="1" class="js-quantity" value="1">
+                                                    <button class="js-decrease-btn">-</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-product-item">
+                                        <input class="header__cart-product-item-tick" type="checkbox">
+                                        <img class="header__cart-product-item-img" src="./assets/image/macbook_a1466.png" alt="">
+                                        <div class="header__cart-product-item-info">
+                                            <div class="header__cart-product-item-head">
+                                                <h5 class="header__cart-product-item-name">Apple Macbook A1466 i5 4Gb SSD</h5>
+                                                <div class="header__cart-product-price-wrap">
+                                                    <span class="header__cart-product-item-price">1.299.000đ</span>
+                                                    <span class="header__cart-product-multiply">x</span>
+                                                    <span class="header__cart-product-item-quantity js-display-quantity" data-default-value="1">1</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="header__cart-product-body">
+                                                <span class="header__cart-product-classification">Phân loại: Máy tính</span>
+                                                <div class="header__cart-product-body-choose-quantity">
+                                                    <button class="js-increase-btn">+</button>
+                                                    <input type="number" min="1" max="10" step="1" class="js-quantity" value="1">
+                                                    <button class="js-decrease-btn">-</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-product-item">
+                                        <input class="header__cart-product-item-tick" type="checkbox">
+                                        <img class="header__cart-product-item-img" src="./assets/image/o_cung_ngoai.jpg" alt="">
+                                        <div class="header__cart-product-item-info">
+                                            <div class="header__cart-product-item-head">
+                                                <h5 class="header__cart-product-item-name">Ổ cứng di động Transcend USB 3.0</h5>
+                                                <div class="header__cart-product-price-wrap">
+                                                    <span class="header__cart-product-item-price">499.000đ</span>
+                                                    <span class="header__cart-product-multiply">x</span>
+                                                    <span class="header__cart-product-item-quantity js-display-quantity" data-default-value="1">1</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="header__cart-product-body">
+                                                <span class="header__cart-product-classification">Phân loại: Ổ cứng</span>
+                                                <div class="header__cart-product-body-choose-quantity">
+                                                    <button class="js-increase-btn">+</button>
+                                                    <input type="number" min="1" max="10" step="1" class="js-quantity" value="1">
+                                                    <button class="js-decrease-btn">-</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-product-item">
+                                        <input class="header__cart-product-item-tick" type="checkbox">
+                                        <img class="header__cart-product-item-img" src="./assets/image/laptop_dell_latitude_3520.jpg" alt="">
+                                        <div class="header__cart-product-item-info">
+                                            <div class="header__cart-product-item-head">
+                                                <h5 class="header__cart-product-item-name">Laptop Dell Latitude 3520 15.6''</h5>
+                                                <div class="header__cart-product-price-wrap">
+                                                    <span class="header__cart-product-item-price">10.500.000đ</span>
+                                                    <span class="header__cart-product-multiply">x</span>
+                                                    <span class="header__cart-product-item-quantity js-display-quantity" data-default-value="1">1</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="header__cart-product-body">
+                                                <span class="header__cart-product-classification">Phân loại: Máy tính</span>
+                                                <div class="header__cart-product-body-choose-quantity">
+                                                    <button class="js-increase-btn">+</button>
+                                                    <input type="number" min="1" max="10" step="1" class="js-quantity" value="1">
+                                                    <button class="js-decrease-btn">-</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-product-item">
+                                        <input class="header__cart-product-item-tick" type="checkbox">
+                                        <img class="header__cart-product-item-img" src="./assets/image/macbook_a1466.png" alt="">
+                                        <div class="header__cart-product-item-info">
+                                            <div class="header__cart-product-item-head">
+                                                <h5 class="header__cart-product-item-name">Apple Macbook A1466 i5 4Gb SSD</h5>
+                                                <div class="header__cart-product-price-wrap">
+                                                    <span class="header__cart-product-item-price">1.299.000đ</span>
+                                                    <span class="header__cart-product-multiply">x</span>
+                                                    <span class="header__cart-product-item-quantity js-display-quantity" data-default-value="1">1</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="header__cart-product-body">
+                                                <span class="header__cart-product-classification">Phân loại: Máy tính</span>
+                                                <div class="header__cart-product-body-choose-quantity">
+                                                    <button class="js-increase-btn">+</button>
+                                                    <input type="number" min="1" max="10" step="1" class="js-quantity" value="1">
+                                                    <button class="js-decrease-btn">-</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-product-item">
+                                        <input class="header__cart-product-item-tick" type="checkbox">
+                                        <img class="header__cart-product-item-img" src="./assets/image/o_cung_ngoai.jpg" alt="">
+                                        <div class="header__cart-product-item-info">
+                                            <div class="header__cart-product-item-head">
+                                                <h5 class="header__cart-product-item-name">Ổ cứng di động Transcend USB 3.0</h5>
+                                                <div class="header__cart-product-price-wrap">
+                                                    <span class="header__cart-product-item-price">499.000đ</span>
+                                                    <span class="header__cart-product-multiply">x</span>
+                                                    <span class="header__cart-product-item-quantity js-display-quantity" data-default-value="1">1</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="header__cart-product-body">
+                                                <span class="header__cart-product-classification">Phân loại: Ổ cứng</span>
+                                                <div class="header__cart-product-body-choose-quantity">
+                                                    <button class="js-increase-btn">+</button>
+                                                    <input type="number" min="1" max="10" step="1" class="js-quantity" value="1">
+                                                    <button class="js-decrease-btn">-</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="header__cart-footing">
+                                    <i id="js-remove-product" class="header__cart-remove-product fas fa-trash-can"></i>
+                                    <button class="header__cart-product-buy-btn">Xem giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="slider">
+            <div class="slider__intro">
+                <ul class="slider__intro-news">
+                    <input type="radio" name="radio-btn" id="img-first" checked>
+                    <li class="slider__intro-news-content">
+                        <div class="slider__intro-news-poster">
+                            <div class="slider__intro-poster-video">
+                                <!-- tag iframe -->
+                                <iframe id="myVideo"
+                                    src="https://www.canva.com/design/DAFnGJideFY/watch?embed=true" 
+                                    allowfullscreen="allowfullscreen" allow="autoplay; loop">
+                                </iframe>
+
+                                <!-- tag video -->
+                                <!-- <video id="myVideo" autoplay loop>
+                                    <source src="./assets/image/itshop.mp4" type="video/mp4">
+                                </video> -->
+                            </div>                            
+                        </div>
+
+                        <div class="slider__intro-news-nav">
+                            <label for="img-third" class="prev">&#x2039;</label>
+                            <label for="img-second" class="next">&#x203a;</label>
+                        </div>
+                    </li>
+
+                    <input type="radio" name="radio-btn" id="img-second">
+                    <li class="slider__intro-news-content">
+                        <div class="slider__intro-news-poster">
+                            <img src="./assets/image/poster2.png" alt="">
+                        </div>
+
+                        <div class="slider__intro-news-nav">
+                            <label for="img-first" class="prev">&#x2039;</label>
+                            <label for="img-third" class="next">&#x203a;</label>
+                        </div>
+                    </li>
+
+                    <input type="radio" name="radio-btn" id="img-third">
+                    <li class="slider__intro-news-content">
+                        <div class="slider__intro-news-poster">
+                            <img src="./assets/image/poster1.png" alt="">
+                        </div>
+
+                        <div class="slider__intro-news-nav">
+                            <label for="img-second" class="prev">&#x2039;</label>
+                            <label for="img-first" class="next">&#x203a;</label>
+                        </div>
+                    </li>
+
+                    <li class="slider__intro-nav-dots">
+                        <label for="img-first" class="nav-dot" id="img-dot-1"></label>
+                        <label for="img-second" class="nav-dot" id="img-dot-2"></label>
+                        <label for="img-third" class="nav-dot" id="img-dot-3"></label>
+                    </li>
+                </ul>
+
+                <div class="slider__intro-brand">
+                    <img src="./assets/image/img_above.png" alt="" class="slider__intro-brand-above">
+                    <img src="./assets/image/img_below.jpg" alt="" class="slider__intro-brand-below">
+                </div>
+            </div>
+
+            <!-- Features are on the slider -->
+            <ul class="slider__function">
+                <li class="slider__function-item">
+                    <a href="#" class="slider__function-item-link">
+                        <img src="./assets/image/function_img/img0.jpg" alt="" class="slider__function-item-img">
+                        <span class="slider__function-item-name">Liên Kết Ngân Hàng</span>
+                    </a>
+                </li>
+
+                <li class="slider__function-item">
+                    <a href="#" class="slider__function-item-link">
+                        <img src="./assets/image/function_img/img1.png" alt="" class="slider__function-item-img">
+                        <span class="slider__function-item-name">Khung Giờ Săn Sale</span>
+                    </a>
+                </li>
+
+                <li class="slider__function-item">
+                    <a href="#" class="slider__function-item-link">
+                        <img src="./assets/image/function_img/img2.png" alt="" class="slider__function-item-img">
+                        <span class="slider__function-item-name">Miễn Phí Vận Chuyển</span>
+                    </a>
+                </li>
+
+                <li class="slider__function-item">
+                    <a href="#" class="slider__function-item-link">
+                        <img src="./assets/image/function_img/img3.png" alt="" class="slider__function-item-img">
+                        <span class="slider__function-item-name">Pass Đồ Secondhand</span>
+                    </a>
+                </li>
+
+                <li class="slider__function-item">
+                    <a href="#" class="slider__function-item-link">
+                        <img src="./assets/image/function_img/img4.png" alt="" class="slider__function-item-img">
+                        <span class="slider__function-item-name">Mã Giảm Giá</span>
+                    </a>
+                </li>
+
+                <li class="slider__function-item">
+                    <a href="#" class="slider__function-item-link">
+                        <img src="./assets/image/function_img/img5.png" alt="" class="slider__function-item-img">
+                        <span class="slider__function-item-name">Nạp Tiền, Thanh Toán</span>
+                    </a>
+                </li>
+
+                <li class="slider__function-item">
+                    <a href="#" class="slider__function-item-link">
+                        <img src="./assets/image/function_img/img6.jpg" alt="" class="slider__function-item-img">
+                        <span class="slider__function-item-name">Minigame:Vòng Quay May Mắn</span>
+                    </a>
+                </li>
+
+                <li class="slider__function-item">
+                    <a href="#" class="slider__function-item-link">
+                        <img src="./assets/image/function_img/img7.png" alt="" class="slider__function-item-img">
+                        <span class="slider__function-item-name">Hàng Quốc Tế</span>
+                    </a>
+                </li>
+
+                <li class="slider__function-item">
+                    <a href="#" class="slider__function-item-link">
+                        <img src="./assets/image/function_img/img8.png" alt="" class="slider__function-item-img">
+                        <span class="slider__function-item-name">Bảo Hiểm Vận Chuyển</span>
+                    </a>
+                </li>
+
+                <li class="slider__function-item">
+                    <a href="#" class="slider__function-item-link">
+                        <img src="./assets/image/function_img/img9.jpg" alt="" class="slider__function-item-img">
+                        <span class="slider__function-item-name">Xem Thêm</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="container__product-classification">
+                <h3>Danh Mục Sản Phẩm</h3>
+
+                <ul class="container__product-classification-list">
+                    <!-- Product classification first page -->
+                    <div class="container__product-classification-list--page1">
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/laptop.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">Máy Tính</span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/tivi.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">Thiết Bị Điện Tử</span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/phone.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">Điện Thoại</span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/tablet.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">Tablet</span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/camera.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">Máy Ảnh & Máy Quay Phim</span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/apple_watch.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">Đồng Hồ Công Nghệ</span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/headphone.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">Loa, Tai Nghe</span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/keyboard.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">Bàn Phím Máy Tính</span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/mouse.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">Chuột Máy Tính</span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/ps4_controller.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">Playstation</span>
+                            </a>
+                        </li>
+                    </div>
+
+                    <!-- Product classification second page -->
+                    <div class="container__product-classification-list--page2">
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/dvd.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">Đĩa, Ổ Cứng</span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/usb.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">USB, Thẻ Nhớ</span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/technology_furniture.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">Nội Thất Công Nghệ</span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/launchpad.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">Thiết Bị Làm Nhạc</span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/electronic_boards.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">Bo Mạch Điện Tử</span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/electronic_repair_tools.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">Dụng Cụ Sửa Điện Tử</span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/backup_charger.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">Dây Sạc, Dây Cáp</span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item">
+                            <a href="#" class="container__product-classification-item-link">
+                                <div class="container__product-classification-img-wrap">
+                                    <img src="./assets/image/product_classification/router.png" alt="" 
+                                    class="container__product-classification-img"><br>
+                                </div>
+                                <span class="container__product-classification-name">Router, Hub & Switch</span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item container__product-classification-item--not-available">
+                            <a href="#" class="container__product-classification-item-link">
+                                <img src="" alt="" class="container__product-classification-img--not-available"><br>
+                                <span class="container__product-classification-name--not-available"></span>
+                            </a>
+                        </li>
+                        <li class="container__product-classification-item container__product-classification-item--not-available">
+                            <a href="#" class="container__product-classification-item-link">
+                                <img src="" alt="" class="container__product-classification-img--not-available"><br>
+                                <span class="container__product-classification-name--not-available"></span>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+                <!-- Product classification pagination -->
+                <div class="container__product-classification-pagination">
+                    <a href="#" class="container__product-classification-pagination-prev">
+                        <i class="fas fa-angle-left"></i>
+                    </a>
+                    <a href="#" class="container__product-classification-pagination-next">
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 12 column grid design -->
+            <div class="grid">
+                <div class="grid__row container__product-display">
+                    <div class="grid__column--2">
+                        <nav class="category">
+                            <h3 class="category__heading"><i class="raise-icon fas fa-list"></i> Danh Mục</h3>
+            
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Tất Cả Sản Phẩm</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Máy Tính Dell</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Máy Tính Asus</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Máy Tính Lenovo</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">IPhone 14 Pro Max</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">IPhone 13 Pro Max</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">IPhone 12 Pro Max</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">IPhone 11 Pro Max</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">MacBook Pro</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">MacBook Air</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Tivi TCL 43 inch</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Tivi Sony 52 inch</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Apple Watch Ultra GPS</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Bàn phím cơ Bluetooth</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Chuột không dây</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Touchpad</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+    
+                    <div class="grid__column--10">
+                        <div class="filter-bar">
+                            <div class="filter-bar__sort">
+                                <div class="filter-bar__label">Sắp xếp theo</div>
+                                <div class="filter-bar__btn filter-bar__btn-active">Phổ biến</div>
+                                <div class="filter-bar__btn">Mới nhất</div>
+                                <div class="filter-bar__btn">Bán chạy</div>
+
+                                <div class="filter-bar__selection select-input">
+                                    <span class="filter-bar__selection-label">Giá</span>
+                                    <i class="select-input__icon fas fa-angle-down"></i>
+
+                                    <ul class="select-input__list">
+                                        <li class="select-input__item">
+                                            <a href="#" class="select-input__item-link">Giá: Thấp đến Cao</a>
+                                        </li>
+                                        <li class="select-input__item">
+                                            <a href="#" class="select-input__item-link">Giá: Cao đến Thấp</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="filter-bar__page">
+                                <span class="filter-bar__page-num">
+                                    <span class="filter-bar__page-current">1</span>/12
+                                </span>
+
+                                <div class="filter-bar__page-switch">
+                                    <a href="#" class="filter-bar__page-btn filter-bar__page-btn--disabled">
+                                        <i class="fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="#" class="filter-bar__page-btn">
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container__product-list">
+                            <!-- Row 1 -->
+                            <div class="grid__row">
+                                <!-- Product items -->
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop3.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop3.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop3.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop3.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop3.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Row 2 -->
+                            <div class="grid__row">
+                                <!-- Product items -->
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop2.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop2.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop2.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop2.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop2.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Row 3 -->
+                            <div class="grid__row">
+                                <!-- Product items -->
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop4.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop4.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop4.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop4.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop4.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Row 4 -->
+                            <div class="grid__row">
+                                <!-- Product items -->
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop6.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop6.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop6.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop6.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop6.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Row 5 -->
+                            <div class="grid__row">
+                                <!-- Product items -->
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop7.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop7.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop7.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop7.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column--2-4">
+                                    <a class="container__product-item" href="#">
+                                        <div class="container__product-item-img" 
+                                            style="background-image: url(./assets/image/product/laptop7.png);">
+                                        </div>
+                                        <h5 class="container__product-item-name">
+                                            Laptop xách tay Nhật - HP 830 G5 - I5 - 8gb - 256gb - FHD
+                                        </h5>
+
+                                        <div class="container__product-item-price">
+                                            <span class="container__product-item-price-old">6.800.000đ</span>
+                                            <span class="container__product-item-price-new">5.300.000đ</span>
+                                        </div>
+
+                                        <div class="container__product-item-state-wrap">
+                                            <i class="fas fa-cart-plus"></i>
+                                            <span class="container__product-item-state">
+                                                Đã bán: <span class="container__product-quantity-sold">54</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="container__product-item-action">
+                                            <span class="container__product-item-like">
+                                                <i class="container__product-item-like-icon far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+                                            <div class="container__product-item-reviews">
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="container__product-item-active fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container__product-item-origin">
+                                            <span class="container__product-item-brand">venus.vt</span>
+                                            <span class="container__product-item-adress">Phú Yên</span>
+                                        </div>
+                                        <div class="container__product-item-favourite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="container__product-item-sale-off">
+                                            <span class="container__product-item-percent">20%</span>
+                                            <span class="container__product-item-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="container__pagination pagination">
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__item-link"></a>
+                                <i class="pagination__item-icon fas fa-angle-left"></i>
+                            </li>
+
+                            <li class="pagination__item pagination__item-specified">
+                                <a href="#" class="pagination__item-link">1</a>
+                            </li>
+
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__item-link">2</a>
+                            </li>
+
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__item-link">3</a>
+                            </li>
+
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__item-link">4</a>
+                            </li>
+
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__item-link">5</a>
+                            </li>
+
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__item-link">...</a>
+                            </li>
+
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__item-link">12</a>
+                            </li>
+
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__item-link"></a>
+                                <i class="pagination__item-icon fas fa-angle-right"></i>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column--2-4">
+                        <h3 class="footer__heading">CHĂM SÓC KHÁCH HÀNG</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Hỗ Trợ Khách Hàng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Hướng Dẫn Mua Hàng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Hướng Dẫn Bán Hàng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Thanh Toán</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Liên Kết Ví Điện Tử</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Liên Kết Ngân Hàng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Vận Chuyển</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Trả Hàng & Hoàn Tiền</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Bảo Hiểm</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Hỏi/ Đáp</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Chính Sách Bảo Hành</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="grid__column--2-4">
+                        <h3 class="footer__heading">VỀ ITSHOP</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Giới Thiệu Về ITShop Việt Nam</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Tuyển Dụng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Điều Khoản</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Chính Sách Bảo Mật</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Chính Hãng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Kênh Người Bán</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Flash Sales</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Mã Giảm Giá</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Chương Trình Tiếp Thị</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-item-link">Quản Lý Truyền Thông</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="grid__column--2-4">
+                        <h3 class="footer__heading">THANH TOÁN</h3>
+                        <ul class="footer__pay">
+                            <li class="footer__pay-item">
+                                <img src="./assets/image/pay/pay1.png" alt="" class="footer__pay-item-img">
+                            </li>
+                            <li class="footer__pay-item">
+                                <img src="./assets/image/pay/pay2.png" alt="" class="footer__pay-item-img">
+                            </li>
+                            <li class="footer__pay-item">
+                                <img src="./assets/image/pay/pay3.png" alt="" class="footer__pay-item-img">
+                            </li>
+                            <li class="footer__pay-item">
+                                <img src="./assets/image/pay/pay4.png" alt="" class="footer__pay-item-img">
+                            </li>
+                            <li class="footer__pay-item">
+                                <img src="./assets/image/pay/pay5.png" alt="" class="footer__pay-item-img">
+                            </li>
+                            <li class="footer__pay-item">
+                                <img src="./assets/image/pay/pay6.png" alt="" class="footer__pay-item-img">
+                            </li>
+                            <li class="footer__pay-item">
+                                <img src="./assets/image/pay/pay7.png" alt="" class="footer__pay-item-img">
+                            </li>
+                            <li class="footer__pay-item">
+                                <img src="./assets/image/pay/pay8.png" alt="" class="footer__pay-item-img">
+                            </li>
+                            <li class="footer__pay-item">
+                                <img src="./assets/image/pay/pay9.png" alt="" class="footer__pay-item-img">
+                            </li>
+                        </ul>
+
+                        <h3 class="footer__heading">ĐƠN VỊ VẬN CHUYỂN</h3>
+                        <ul class="footer__shipping-unit">
+                            <li class="footer__shipping-unit-item">
+                                <img src="./assets/image/shipping_unit/su1.png" alt="" class="footer__shipping-unit-item-img">
+                            </li>
+                            <li class="footer__shipping-unit-item">
+                                <img src="./assets/image/shipping_unit/su2.png" alt="" class="footer__shipping-unit-item-img">
+                            </li>
+                            <li class="footer__shipping-unit-item">
+                                <img src="./assets/image/shipping_unit/su3.png" alt="" class="footer__shipping-unit-item-img">
+                            </li>
+                            <li class="footer__shipping-unit-item">
+                                <img src="./assets/image/shipping_unit/su4.jpg" alt="" class="footer__shipping-unit-item-img">
+                            </li>
+                            <li class="footer__shipping-unit-item">
+                                <img src="./assets/image/shipping_unit/su5.png" alt="" class="footer__shipping-unit-item-img">
+                            </li>
+                            <li class="footer__shipping-unit-item">
+                                <img src="./assets/image/shipping_unit/su6.png" alt="" class="footer__shipping-unit-item-img">
+                            </li>
+                            <li class="footer__shipping-unit-item">
+                                <img src="./assets/image/shipping_unit/su7.png" alt="" class="footer__shipping-unit-item-img">
+                            </li>
+                            <li class="footer__shipping-unit-item">
+                                <img src="./assets/image/shipping_unit/su8.png" alt="" class="footer__shipping-unit-item-img">
+                            </li>
+                            <li class="footer__shipping-unit-item">
+                                <img src="./assets/image/shipping_unit/su9.png" alt="" class="footer__shipping-unit-item-img">
+                            </li>
+                            <li class="footer__shipping-unit-item">
+                                <img src="./assets/image/shipping_unit/su10.png" alt="" class="footer__shipping-unit-item-img">
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="grid__column--2-4">
+                        <h3 class="footer__heading">THEO DÕI ITSHOP TRÊN</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <i class="fab fa-facebook"></i>
+                                <a href="#" class="footer__list-item-link footer__social">Facebook</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <i class="fab fa-instagram" style="font-size: 1.8rem;"></i>
+                                <a href="#" class="footer__list-item-link footer__social">Instagram</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <i class="fab fa-youtube"></i>
+                                <a href="#" class="footer__list-item-link footer__social">Youtube</a>
+                            </li>
+                        </ul>
+                        <h3 class="footer__heading">LIÊN HỆ VỚI ITSHOP</h3>
+                        <div class="footer__contact-switchboard">
+                            <i class='fas fa-headset'></i>
+                            <span>SĐT Tổng Đài: +84966090679</span>
+                        </div>
+                    </div>
+    
+                    <div class="grid__column--2-4">
+                        <h3 class="footer__heading">TẢI ỨNG DỤNG ITSHOP NGAY THÔI</h3>
+                        <div class="footer__download">
+                            <img src="https://down-vn.img.susercontent.com/file/a5e589e8e118e937dc660f224b9a1472" 
+                                alt="QR Code Download" class="footer__download-qrcode">
+                            <div class="footer__download-app">
+                                <a href="https://play.google.com/store/games?hl=vi&gl=US" class="footer__download-app-link" target="_blank">
+                                    <img src="./assets/image/ch_play.png" alt="" class="footer__download-app-img">
+                                </a>
+                                <a href="https://www.apple.com/vn/app-store/" class="footer__download-app-link" target="_blank">
+                                    <img src="./assets/image/app_store.png" alt="" class="footer__download-app-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__row footer__bottom">
+                    <span class="footer__copyright">© Bản quyền thuộc ITShop <span id="currentYear"></span></span>
+                    <span class="footer__nation">
+                        Quốc gia & Khu vực: Việt Nam | Nhật Bản | Thái Lan | Hàn Quốc | Trung Quốc | Singapore | Australia
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/login.js"></script>
+</body>
+</html>
