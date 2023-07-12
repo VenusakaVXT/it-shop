@@ -5,6 +5,11 @@ But unfortunately because my ability is still very weak, I can only do the FE pa
 
 But I also tried to perfect the FE part as best as possible, even though there was a lot of knowledge that was still unlearned and had to learn through [W3School](https://www.w3schools.com/js/).
 
+I designed the layout in the form of a 12-column grid to make it easy to be responsive. But unfortunately I still have not responded on the website so we can't see it on phone.
+
+![image](https://github.com/VenusakaVXT/it-shop/assets/125566811/62068602-fd4f-4ffe-80de-f5615f95c19c)
+*The image of a 12-column grid layout is applied to the itshop website.*
+
 In short, this is just a demo website that sells technology products I made with functions mainly focusing on CRUD.
 
 The functions I have done for the website:
