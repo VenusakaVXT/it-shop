@@ -66,6 +66,66 @@ I have also fully noted in the file **index.html**.
 
 And also the CSS for each element to appear on logout or login.
 
+Because at the time of making this demo, I could not think of how to use JS to render elements to the DOM. So I copied and pasted a lot of duplicate elements.
+
+After this, I figured out how to render the element to the DOM with JS, you can refer to the way below and add the corresponding value to avoid repeating the HTML code quite a lot.
+
+Create a data.js file and add it for easy code management.
+
+```javascript
+const productList = document.querySelector('.container__product-list');
+const rows = document.querySelectorAll('.grid__row');
+const columns = document.querySelectorAll('.grid__column--2-4');
+
+function renderColumns(columnArray) {
+  columnArray.forEach(column => {
+    const newColumn = document.createElement('div');
+    newColumn.classList.add('grid__column--2-4');
+
+    const productItem = document.createElement('a');
+    productItem.classList.add('container__product-item');
+    productItem.href = column.link;
+
+    const productItemImg = document.createElement('div');
+    productItemImg.classList.add('container__product-item-img');
+    productItemImg.style.backgroundImage = `url(${column.image})`;
+    productItem.appendChild(productItemImg);
+
+    const productName = document.createElement('h5');
+    productName.classList.add('container__product-item-name');
+    productName.textContent = column.name;
+    productItem.appendChild(productName);
+
+    // ... Add other elements and properties
+
+    newColumn.appendChild(productItem);
+    rows.forEach(row => row.appendChild(newColumn));
+  });
+  productList.appendChild(rows);
+}
+
+// Example data
+const columnData = [
+  {
+    link: '#',
+    image: './assets/image/product/laptop1.png',
+    name: 'Laptop 1',
+    // ... Add other properties
+  },
+  {
+    link: '#',
+    image: './assets/image/product/laptop2.png',
+    name: 'Laptop 2',
+    // ... Add other properties
+  },
+  // ... Add more data objects
+];
+
+renderColumns(columnData);
+```
+
+Or if you know the backend, handle the data poured into the website to make it easier to manage.
+
 In general, my website can only do the interface of the homepage, registration, and login. And missing a lot of functions for a basic website like logout/login, product search, pagination, ....
 
 But I will try to practice more BE skills to soon complete this website and fix errors for the website to become as optimal as possible.
