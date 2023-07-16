@@ -70,7 +70,7 @@ Because at the time of making this demo, I could not think of how to use JS to r
 
 After this, I figured out how to render the element to the DOM with JS, you can refer to the way below and add the corresponding value to avoid repeating the HTML code quite a lot.
 
-Create a data.js file and add it for easy code management.
+Create a **data.js** file and add it for easy code management.
 
 ```javascript
 const productList = document.querySelector('.container__product-list');
